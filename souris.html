@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Observons les évenements de la souris</title>
+        <meta name="author" content="Isabelle NANI @ FOBAGRA 2016" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("div").on({
+                    mouseenter: function() {
+                        $(this).css("background-color", "yellow");
+                    },
+                    mouseleave: function() {
+                        $(this).css("background-color", "red")
+                    },
+                    click: function() {
+                        $(this).css("border", "solid 5px blue");
+                    },
+                    dblclick: function() {
+                        $(this).css("border-radius", "0px").animate({
+                            opacity: '1',
+                            height: '400px',
+                            width: '400px'
+                        });
+                    }
+                });
+            });
+        </script>
+        <style>
+            body{
+                background-color: black;}
+            div{
+                margin: 100px auto 800px auto;
+                width: 200px;
+                height: 200px;
+                border-radius: 100px;
+                background-color: white;
+            }
+			div#bottom{
+				margin: auto auto;
+				height: 100px;
+				padding: 2em;
+				border-radius: 2em;
+			    position: relative;
+				bottom: 0;
+				right: 0;
+				border: 1em doted green;
+			}
+        </style>
+    </head>
+    <body>
+        <div></div>
+		<div id="bottom">
+		<p>Bravo :-) Vous avez trouvé le contenu caché. <strong> Belle utilisation de la roulette ! </strong></p>
+		</div>
+        <footer>Isabelle Nani &copyFOBAGRA 2017</footer>
+    </body>
+</html>

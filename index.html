@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FOBAGRA INTERNE - Ressources pédagogiques</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Partage des ressources pédagogiques de l' a.s.b.l. FOBAGRA - Bruxelles 2018-2019">
+        <meta name="keywords" content="w3.css, parallax, fobagra, p&eacute;dagogie, initiation, informatique, souris, clavier, arborescences, maniulation de fenête, indows, dossier, fichier, extention, selectionner, traitement de texte, internet, mail">
+        <meta name="author" content="Isabelle NANI DEV">
+        <meta name="date" content="2019-04-23" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-colors-camo.css">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-colors-vivid.css">
+        <style>
+            body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+            body, html {
+                height: 100%;
+                color: #060606; /*777;*/
+                line-height: 1.8;
+            }
+
+            /* Create a Parallax Effect */
+            .bgimg-1, .bgimg-2, .bgimg-3 {
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            /* First image (Logo. Full height) */
+            .bgimg-1 {
+                background-image: url('img/harmony-1229893_1920.jpg');
+                min-height: 100%;
+            }
+
+            /* Second image (Portfolio) */
+            .bgimg-2 {
+                background-image: url("img/typewriter-801921_1920.jpg");
+                min-height: 400px;
+            }
+
+            /* Third image (Contact) */
+            .bgimg-3 {
+                background-image: url("img/homberg-1959229_1920.jpg");
+                min-height: 400px;
+            }
+
+            .w3-wide {letter-spacing: 10px;}
+            .w3-hover-opacity {cursor: pointer;}
+
+            /* Turn off parallax scrolling for tablets and phones */
+            @media only screen and (max-device-width: 1024px) {
+                .bgimg-1, .bgimg-2, .bgimg-3 {
+                    background-attachment: scroll;
+                }
+
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <ul class="w3-navbar" id="myNavbar">
+                <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+                    <a class="w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+                <li class="w3-left-align" ><a href="#accueil"> FOBAGRA</a></li>
+                <li class="w3-hide-small"><a href="#clavier_souris"><i class="fa fa-keyboard-o"></i> CLAVIER & SOURIS</a></li>
+                <li class="w3-hide-small"><a href="#seven"><i class="fa fa-windows"></i> WINDOWS </a></li>
+                <li class="w3-hide-small"><a href="#virtuel"><i class="fa fa-folder-open-o"></i> DOSSIERS & FICHIERS</a></li>
+
+
+                <li class="w3-hide-small"><a href="#logiciel"><i class="fa fa-file-word-o"></i> WORD</a></li>
+                <li class="w3-hide-small"><a href="#internet"><i class="fa fa-envelope-o"></i> INTERNET & MAIL</a></li>
+                <!--<li class="w3-hide-small"><a href="#excel"><i class="fa fa-file-excel-o"></i> EXCEL</a></li>
+                <li class="w3-hide-small w3-right">
+                    <a href="#" class="w3-hover-red">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                -->
+            </ul>
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+                <ul class="w3-navbar w3-left-align w3-white">
+                    <li><a href="#clavier_souris" onclick="toggleFunction()">CLAVIER & SOURIS</a></li>
+                    <li><a href="#seven" onclick="toggleFunction()"> WINDOWS 7</a></li>
+                    <li><a href="#virtuel" onclick="toggleFunction()">DOSSIERS & FICHIERS</a></li>
+
+                    <li><a href="#logiciel" onclick="toggleFunction()">WORD</a></li>
+                    <li><a href="#internet" onclick="toggleFunction()">INTERNET & MAIL</a></li>
+                    <!--
+                    <li><a href="#excel" onclick="toggleFunction()">EXCEL</a></li>
+                    <li><a href="#">RECHERCHE</a></li>
+                    -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="accueil">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+                <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">OUTILS <span class="w3-hide-small">LUDIQUES</span> </span>
+            </div>
+        </div>
+
+
+        <!-- Container (About Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="clavier_souris">
+            <h3 class="w3-center">À PROPOS</h3>
+            <p class="w3-center"><em>Ressources pédagogiques</em></p>
+            <p>Vous trouverez des liens utiles, vers des exercices, des syllabus, des présentations ou des sites de reférences ...
+                <br />
+                Objectif : Permettre à tous de s’approprier les technologies de l’information et de la communication (TIC).
+                <br />
+
+            </p>
+            <div class="w3-row">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <p><strong><i class="fa fa-keyboard-o w3-margin-right"></i>CLAVIER & SOURIS</strong></p><br>
+
+
+                </div>
+
+                <!-- Hide this text on small devices -->
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+
+
+                </div>
+            </div>
+
+
+            <div id="souris">
+                <h2>La souris</h2>
+                <img src="img/mouse-153153_1280.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="souris" width="500" height="333">
+                <ol><!-- copier coller cette ligne  <li><a href="" target=_blank></a></li> -->
+                    <li><a href="souris.html" target=_blank>Intro souris - observation des acquis des apprenants</a>  (<em>fichier html interne</em>)</li>
+                    <li><a href="http://weavesilk.com/" target=_blank>Art fractal – Dessiner avec la souris</a></li>
+                    <li><a href="http://corporate.skynet.be/rt002590/souris/Page1.html" target=_blank>Souris - novice</a></li>
+                    <li><a href="http://annie.clic.free.fr/index.htm" target=_blank>Tout sur la souris !</a></li>
+                    <li><a href="https://info.sio2.be/infobase/4/2.php" target=_blank>Clic gauche, droit et double</a></li>
+                    <li><a href="http://lasouris.weebly.com/exercices-simples.html" target=_blank>Apprendre à manipuler la souris - intermédiaire</a></li>
+
+                    <br />
+                    <li> <a href="https://www.lhibouboo.com/jeux_educatifs/14/" target=_blank>Déplacement - interagir avec la scène</a></li>
+                    <li> <a href="https://www.lhibouboo.com/jeux_educatifs/17/" target=_blank>Déplacement - faire la lumière</a></li> 
+                    <li> <a href="https://www.lhibouboo.com/jeux_educatifs/20/" target=_blank>Déplacement - les bulles sans clic</a></li>
+                    <br />
+                    <li> <a href="https://www.lhibouboo.com/jeux_educatifs/22/" target=_blank>Déplacement - attraper les couleurs au vol</a></li>
+                    <li> <a href="https://www.lhibouboo.com/jeux_educatifs/18/" target=_blank>Déplacement - attraper les bananes au vol</a></li>
+
+                    <br />
+                    <li> <a href="http://canardmalin.zeix.com/uebungen/1.htm" target=_blank>Clic - Les liens dans le contenu texte</a>
+
+                        <!--<li> <a href="http://www.lhibouboo.com/jeux_educatifs/jeux_educatifs-couleurs/jeux_educatifs.php" target=_blank>Clic - Compter les couleurs</a></li>-->
+                    <li> <a href="https://www.lhibouboo.com/jeux_educatifs/35/" target=_blank>Clic - relier les points</a></li>
+                    <!--<li> <a href="http://www.lhibouboo.com/jeux_educatifs/jeux_educatifs-decouvre/papillon/jeux_educatifs.php" target=_blank>Clic - coloriage par nombre</a></li>-->
+                    <li> <a href="https://www.lhibouboo.com/jeux_educatifs/28/" target=_blank>Clic - peindre 12 exercices</a></li>
+
+                    <br />	
+                    <!--<li><a href="http://www.gouttedordinateur.org/souris_drag-drop/dragdropcible.html" target=_blank>Glisser Déposer - Forme et couleur</a></li>-->
+
+                    <li> <a href="https://www.lhibouboo.com/jeux_educatifs/26/" target=_blank>Glisser déposer - stickers 4 exercices</a></li>
+                    <li> <a href="https://www.lhibouboo.com/jeux_educatifs/27/" target=_blank>Glisser déposer - refaire l'animal 4 exercices</a></li>
+                    <li> <a href="https://www.lhibouboo.com/jeux_educatifs/29/" target=_blank>Glisser déposer - déguiser</a></li>
+                    <!--<li> <a href="http://www.lhibouboo.com/jeux_educatifs/jeux_educatifs-maisons/jeux_educatifs.php" target=_blank>Glisser déposer - Trouver la bonne maison</a></li>-->
+                    <li> <a href="https://www.lhibouboo.com/jeux_educatifs/31/" target=_blank>Glisser déposer - puzzle d'animaux</a></li>
+                    <li> <a href="https://www.lhibouboo.com/jeux_educatifs/32/" target=_blank>Glisser déposer - Trouver la bonne clé</a></li>
+
+                    <br />	
+                    <li><a href="https://www.lesbonsclics.fr/upload/storyline-exercices/le-double-clic_hedwige/story_html5.html" target=_blank>Le double clic</a> </li> 
+                    <li><a href="https://www.lesbonsclics.fr/upload/storyline-exercices/le-drag-drop/story_html5.html" target=_blank>Le glisser-déposer</a> </li>
+
+
+                    <br />
+                    <li> <a href="https://lescahiersdudebutant.fr/exercices/texteselection/index.html" target=_blank>Saisir du texte</a></li>
+                    <li><em><a href="https://docs.google.com/forms/d/e/1FAIpQLSf27CgQh7j1hedS7q9zvAoQL7ZNtuLCtH--8rsV2UZfBvcrJg/viewform" target=_blank>Copier-coller </a> </em></li> 
+                </ol>
+
+                <p class="w3-center">
+                    <em>Téléchargez le résumé du site français " Les bons clics " : </em>
+                </p>
+                <p class="w3-center">
+
+                    <a href="https://www.lesbonsclics.fr/ressources-pedagogiques/utiliser-souris-resume" 
+                       target="_blank" 
+                       title="PDF : Comment utiliser une souris d'ordinateur ?&copy;Les bons clics: ">Comment utiliser une souris d'ordinateur ?</a> 
+                    &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </p>
+
+
+            </div>
+
+
+
+            <div id="clavier">
+                <h2>Le clavier</h2>
+                <img src="img/keyboard-2104009_640.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="clavier" width="500" height="333">
+                <ol>
+                    <li><a href="exercices/exercices_clavier.pdf" target=_blank>Initiation au clavier</a> (lien interne)</li> 
+                    <li><a href="https://www.lesbonsclics.fr/ressources-pedagogiques/utiliser-clavier-exercice" target=_blank>Le clavier (minuscule, accents, effacer, passer à la ligne)</a> </li> 
+                    <li><a href="https://www.lesbonsclics.fr/ressources-pedagogiques/utiliser-clavier2-exercice" target=_blank>Le clavier (MAJ, Chiffres, Ponctuation, @) </a> </li> 
+                    <li><a href="http://ien-perpignan-nord.ac-montpellier.fr/ressources_pedagogiques/EXERCICES/informatique_clavier.htm" target=_blank>Caractères accentués - 1</a></li> 
+                    <li><a href="http://techno.malraux.free.fr/uploads/file/6eme/Inf/clavier/exercice1_clavier.htm" target=_blank>Caractères accentués - 2 </a></li>
+
+                    <li><a href="http://www.typingstudy.com/fr-french-2/lesson/1/part/2" target=_blank>Dactylo - Touches</a></li>
+                    <li><a href="https://www.dactylocours.com/test.php" target=_blank>Dactylo - Test de vitesse</a></li>
+                    <li><a href="https://10fastfingers.com/typing-test/french" target=_blank>Dactylo - Avancé</a> (<em>Attention : les phrases n'ont aucun sens</em>)</li>
+
+                </ol>
+
+                <p class="w3-center">
+                    <em>Téléchargez les résumés du site français  " Les bons clics " : </em>
+                </p>
+                <p class="w3-center">
+                    Comment utiliser son clavier d’ordinateur ? :
+                    <br />
+                    <a href="https://www.lesbonsclics.fr/ressources-pedagogiques/utiliser-clavier-resume" 
+                       target="_blank" 
+                       title="PDF : Comment utiliser son clavier d’ordinateur - partie 1 &copy;Les bons clics ">
+                        Partie 1
+                    </a> 
+                    &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                    <br />
+                    <a href="https://www.lesbonsclics.fr/ressources-pedagogiques/utiliser-clavier-resume" 
+                       target="_blank" 
+                       title="PDF : Comment utiliser son clavier d’ordinateur - partie 2 &copy;Les bons clics ">
+                        Partie 2
+                    </a> 
+                    &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </p>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- Container (système d'exploitation Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="seven">
+
+            <div class="w3-row">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <p><strong><i class="fa fa-windows w3-margin-right"></i> 
+                            WINDOWS 
+                        </strong></p><br>
+                    <img src="img/microsoft-7.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="folder" width="500" height="333">
+
+                </div>
+
+                <!-- Hide this text on small devices
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+
+
+                </div> -->
+            </div>
+
+
+
+
+
+            <div>
+                <h2>Les syllabus : Windows  </h2>
+                <p class="w3-center">
+                    <a href="syllabus/Windows-7.pdf" target="_blank" title="PDF : Windows 7">
+                        Manipuler les éléments de Windows <strong>7</strong>
+                    </a> 
+                    &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </p>
+
+                <p class="w3-center">
+
+                    <a href="https://www.lesbonsclics.fr/ressources-pedagogiques/bureau-ordinateur-resume" 
+                       target="_blank" 
+                       title="PDF : Comment se repérer sur le butreau Windows 10 ? &copy;Les bons clics: ">
+                        Comment se repérer sur le butreau Windows <strong>10</strong> </a> ?
+                    &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </p>
+
+
+                <h2>Les exercices</h2>
+                <p class="w3-center">
+                    <a href="exercices/exercices_fenetres.pdf" target="_blank" title="PDF : Exercices pratiques : déployer, redimensionner et ranger les fenêtres ; utiliser les différents types de menus et sous-menus ; se servir du menu démarrer et de la barre des tâches ; allumer et éteindre correctement l’ordinateur">Exercices pratiques</a>
+                    &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </p>
+                <ul class="w3-ul w3-card-4 w3-center">
+                    <li>
+                        Allumer et éteindre correctement l’ordinateur
+                    </li>
+                    <li>
+                        Se servir du menu démarrer et de la barre des tâches
+                    </li>
+                    <li>
+                        Déployer, redimensionner et réduire les fenêtres 
+                    </li>
+                    <li>
+                        Utiliser les différents types de menus et sous-menus 
+                    </li>
+                </ul>
+            </div>
+
+
+            <p class="w3-center"><img src="img/copier-coller.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="folder" width="300" height="133">
+            </p>
+            <p class="w3-center">
+                <a href="exercices/couper_copier_coller.doc" target="_blank" title="WORD : Exercices pratiques : Copier -Coller">Exercice "Copier-Coller" à téléchargez</a>
+                &nbsp;<i class="fa fa-file-word-o" aria-hidden="true"></i>
+            </p>
+
+            <ul class="w3-ul w3-card-4 w3-center">
+                <li>
+                    Copier : CTRL + C
+                </li>
+                <li>
+                    Coller : CTRL + V
+                </li>
+                <li>
+                    Revenir une action en arrière : CTRL + Z
+                </li>
+            </ul>
+
+        </div>
+
+
+
+
+
+
+        <!-- Container (Arbo, Virtuel Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="virtuel">
+
+            <div class="w3-row">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <p><strong><i class="fa fa-folder-open-o"></i> 
+                            DOSSIER &lt; FICHIER</strong></p><br>
+                    <img src="img/folder-303891_1280.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="folder" width="500" height="333">
+
+                </div>
+
+                <!-- Hide this text on small devices
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+        
+        
+                </div> -->
+            </div>
+
+            <div>
+                <h2>Appréhender le monde numérique à partir d'objets matériels</h2>
+                <div class="w3-panel w3-card-4">
+                    <span style="font-size:100px">&#10077;</span><br>
+                    <p style="margin-top:-60px">
+                        <i>« Du matériel au virtuel » est un jeu de cartes pédagogique qui propose une approche intuitive de l'environnement informatique, en complément à l’apprentissage sur l’ordinateur lui-même.</i>
+                    </p>
+                </div>
+
+                <div class="w3-col m9">
+                    <p>Le site du jeu : <a href="http://www.du-materiel-au-virtuel.be/" target="_blank"> Du matériel au virtuel</a></p>
+                    <p>Télechargez le ficher compréssé <a href="exercices/Du matériel au virtuel.zip"> Du matériel au virtuel.zip</a> <i class="fa fa-file-archive-o" aria-hidden="true"></i></p>
+                </div>
+                <div class="w3-col m3">
+                    <img src="img/materiel-virtuel.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="cartes">
+                </div>
+                <h2>Les exercices</h2>
+                <p class="w3-center">
+                    <a href="exercices/exercices_arbo.pdf" target="_blank" title="PDF : Exercices pratiques : Dossiers - sous-dossiers - fichiers">Exercices pratiques</a>
+                    &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </p>
+                <ul class="w3-ul w3-card-4 w3-center">
+                    <li>
+                        Manipulation d’arborescence « Du matériel au virtuel »
+                    </li>
+                    <li>
+                        Dossier sous-dossiers
+                    </li>
+                    <li>
+                        Mon arborescence de recherche d'emploi
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">23+</span><br>
+                Souris
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">8+</span><br>
+                Clavier
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">30+</span><br>
+                Cartes
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">1700+</span><br>
+                Apprenants
+            </div>
+        </div>
+
+        <!-- Container (software Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="logiciel">
+
+            <div class="w3-row">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <p><strong><i class="fa fa-windows w3-margin-right"></i> 
+                            Logiciel</strong></p><br>
+                    <img id="word" src="img/2000px-MS_word_DOC_icon.svg.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Word" width="500" height="333">
+
+                </div>
+
+                <!-- Hide this text on small devices
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+        
+        
+                </div> -->
+            </div>
+
+            <div>
+                <h2>Microsoft Word <!--<sup><i class="fa fa-registered" aria-hidden="true"></i></sup>--></h2>
+
+              
+                <h3 class="w3-center">WORD 2007</h3>
+                <p class="w3-center">
+                    <em>Téléchargez le syllabus : </em>
+                </p>
+                <p class="w3-center">
+                    <a href="syllabus/Word-2007.pdf" target="_blank" 
+                       title="PDF : Microsoft Office Word 2007">Microsoft Office Word 2007</a> 
+                    &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </p>
+                <br />
+                <h2>Objectif : Maîtriser les bases du traitement de texte Word </h2>
+                <div class="w3-container">
+                    <h2>Les exercices</h2>
+
+                    <ul class="w3-ul w3-card-4">
+
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/01. Orthographe/" target="_blank">
+                                        01. Orthographe
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/02. Enregistrer/" target="_blank">
+                                        02. Enregistrer
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/03. Copier - Couper - Coller/" target="_blank">
+                                        03. Copier - Couper - Coller
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/04. Police/" target="_blank">
+                                        04. Police
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/05. Taille/" target="_blank">
+                                        05. Taille
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/06. Attribut/" target="_blank">
+                                        06. Attribut
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/07. Couleur/" target="_blank">
+                                        07. Couleur
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/08. Surbrillance/" target="_blank">
+                                        08. Surbrillance
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/09. Indice et Exposant/" target="_blank">
+                                        09. Indice et Exposant
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/10. Casse et Effacer la mise en forme/" target="_blank">
+                                        10. Casse et Effacer la mise en forme
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/11. Puces et Numérotation/" target="_blank">
+                                        11. Puces et Numérotation
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/12. Aligner/" target="_blank">
+                                        12. Aligner
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/13. Trame/" target="_blank">
+                                        13. Trame
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/14. Bordure/" target="_blank">
+                                        14. Bordure
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/15. Tableau/" target="_blank">
+                                        15. Tableau
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/16. Images/" target="_blank">
+                                        16. Images
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/17. Marge/" target="_blank">
+                                        17. Marge
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/18. Orientation/" target="_blank">
+                                        18. Orientation
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/19. Colonne/" target="_blank">
+                                        19. Colonne
+                                    </a> </span>
+                            </div>
+                        </li>
+                        <li class="w3-bar">
+                            <img src="img/folder-303891_1280.png" class="w3-bar-item" alt="folder" style="width:63px">
+                            <span onclick="this.parentElement.style.display = 'none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                            <div class="w3-bar-item">
+                                <span class="w3-large"><a href="exercices/20. Pied page entête/" target="_blank">
+                                        20. Pied de page & entête
+                                    </a> </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+
+                <div class="w3-container">
+                    <h3>Les essentiels</h3>
+                    <p class="w3-center">
+                        <a href="exercices/exercices_word-clavier.docx" target="_blank" 
+                           title="Word : Exercices pratiques : découvrir les principales fonctions du traitement de texte Word : saisie, édition et mise en forme du texte, mise en page de documents, gestion de l’affichage, etc. ">Exercices Word à télécharger</a>
+                        &nbsp;<i class="fa fa-file-word-o" aria-hidden="true"></i>
+                    </p>
+                    <ul class="w3-ul w3-card-4 w3-center">
+                        <li>
+                            Découverte des principales fonctions du traitement de texte Word  
+                        </li>
+                        <li>
+                            Saisie, édition et mise en forme du texte
+                        </li>
+                        <li>
+                            Mise en page de documents
+                        </li>
+                        <li>
+                            Gestion de l’affichage
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+
+                <div class="w3-container">
+                    <h3>Les tabulations </h3>
+                    <p class="w3-center">
+                        <a href="exercices/exercices_tabulations&tableaux.docx" target="_blank" 
+                           title="Word : Exercices pratiques : Organisez voter contenu via un tableau à bordures invisibles ou via les taquets de tabulation ">Exercices Word à télécharger</a>
+                        &nbsp;<i class="fa fa-file-word-o" aria-hidden="true"></i>
+                    </p>
+                    <ul class="w3-ul w3-card-4 w3-center">
+                        <li>
+                            Tableau sans aucune bordure  
+                        </li>
+                        <li>
+                            La touche tabulation [TAB] du clavier
+                        </li>
+                        <li>
+                            Les marques de paragraphe, la règle
+                        </li>
+                        <li>
+                            Les taquets de tabulation 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Parallax Image with Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min" id="internet">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-light-grey w3-wide">INTERNET & MAIL</span>
+            </div>
+        </div>
+
+        <!-- Container (Postuler numériquement Section) -->
+        <div class="w3-content w3-container w3-padding-64">
+            <div>
+                <h2>Objectif : Postuler à la mode du numérique</h2>
+                <p class="w3-center">
+                    <a href="exercices/exercices_recherche-emploi-2.pdf" target="_blank" title="PDF : Exercices pratiques : Comment postuler électroniquement">Fiche pratique</a> <sup>2017</sup>
+                    &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </p>
+                <ul class="w3-ul w3-card-4 w3-center">
+                    <li>
+                        Préparez votre dossier de candidature (un dossier par offre)
+                    </li>
+                    <li>
+                        Trouvez des offres	
+                    </li>
+                    <li>
+                        Renseignez-vous sur l’entreprise	
+                    </li>
+                    <li>
+                        Modifiez votre lettre de motivation et votre CV en fonction de l’offre	
+                    </li>
+                    <li>
+                        Envoyer votre candidature	
+                    </li>
+                    <li>
+                        Préparez l’entretien d’embauche	
+                    </li>
+                    <li>
+                        Imprimez vos preuves de recherche d’emploi	
+                    </li>
+                </ul>
+            </div> 
+
+            <div class="w3-padding-64">
+
+                <h3 class="w3-center">INTERNET</h3>
+                <p class="w3-center">
+                    <em>Téléchargez le syllabus : </em>
+                </p>
+                <p class="w3-center">
+                    <a href="syllabus/internet.pdf" target="_blank" title="PDF : Premier pas ... sur Internet">Premier pas ... sur Internet</a> 
+                    &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </p>
+                <br>
+
+                <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+
+                <div class="w3-row-padding w3-center">
+                    <div class="w3-col m6">
+                        <img src="img/google-some_of_all.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Google enterprise">
+                    </div>
+
+                    <div class="w3-col m6">
+                        <img src="img/browser-773215_1280.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Navigateur">
+                    </div>
+
+                    <!--    <div class="w3-col m3">
+                            <img src="img/lighthouse-116524_1280.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Phare">
+                        </div>
+        
+                        <div class="w3-col m3">
+                            <img src="img/web-845799_1920.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="web">
+                        </div>
+        
+                        <button class="w3-btn w3-light-grey w3-padding-xlarge" style="margin-top:64px">MORE</button>
+                    -->
+                </div>
+
+            </div>
+
+            <div class="w3-row-padding w3-center w3-section">
+                <h3 class="w3-center">MAIL</h3>
+                <p><em>Téléchargez le syllabus : </em></p>
+                <p>
+                    <a href="syllabus/gmail_gestion.pdf" target="_blank" title="PDF : Gérer votre boîte Gmail">Gérer votre boîte Gmail</a> 
+                    &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </p>
+
+                <!--
+                <div class="w3-col m3">
+                    <img src="img/tree-200795_1920.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="tree">
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="img/search-engine-optimization-411347_1280.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="web">
+                </div>
+                -->
+                <div class="w3-col m12">
+                    <img src="img/macbook-336704_1920.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="poste de travail">
+                </div>
+                <!--
+                                <div class="w3-col m3">
+                                    <img src="img/boat-house-192990_1280.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="boat-house">
+                                </div>
+                -->
+            </div>
+        </div>
+
+
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display = 'none'">
+            <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" alt="" src="#" class="w3-image">
+                <p id="caption" class="w3-opacity w3-large"></p>
+            </div>
+        </div>
+
+
+        <!-- Third Parallax Image with Text -->
+
+        <div class="bgimg-3 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle">
+                <p class="w3-xxlarge w3-text-light-grey w3-wide">Renforcez vos bases en informatique</p>
+            </div>
+        </div>
+
+
+
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+            <a href="#accueil" class="w3-btn w3-padding w3-light-grey w3-hover-amber w3-round-large"><i class="fa fa-arrow-up w3-margin-right"></i>Haut de page</a>
+            <!--
+                    <div class="w3-xlarge w3-section">
+                 <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+                 <i class="fa fa-instagram w3-hover-text-purple"></i>
+                 <i class="fa fa-snapchat w3-hover-text-yellow"></i>
+                 <i class="fa fa-pinterest-p w3-hover-text-red"></i>
+                 <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+                 <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+             </div>
+            -->
+            <p>Isabelle NANI DEV &copy; FOBAGRA a.s.b.l. <a href="#" title="fobagra" target="_blank" class="w3-hover-text-green"></a><br />
+                <img src="img/fobagra-logo-blue.jpg" alt="logo de l'asbl FOBAGRA">
+                <img src="img/fobagra-header.png" alt="Header du site FOBAGRA.net">
+            </p>
+
+        </footer>
+
+        <!-- Add Google Maps -->
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+            /* Google Map Location */
+            var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+            function initialize() {
+                var mapProp = {
+                    center: myCenter,
+                    zoom: 12,
+                    scrollwheel: false,
+                    draggable: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+                var marker = new google.maps.Marker({
+                    position: myCenter,
+                });
+
+                marker.setMap(map);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            // Change style of navbar on scroll
+            window.onscroll = function () {
+                myFunction()
+            };
+            function myFunction() {
+                var navbar = document.getElementById("myNavbar");
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+                } else {
+                    navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+                }
+            }
+
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function toggleFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+
+    </body>
+</html>
