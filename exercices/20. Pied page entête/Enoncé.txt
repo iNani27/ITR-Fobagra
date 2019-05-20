@@ -1,0 +1,8 @@
+Enoncé :
+
+Appliquez des en-têtes et pieds de page dans le document : 
+La page de garde n'a pas d'en-tête ni de pied de page.
+Les pages paires et impaires sont différentes.
+Le titre de l'ouvrage apparaît dans les en-têtes de pages paires.
+Les prénom et nom de l'auteur apparaissent dans les en-têtes des pages impaires.
+Les numéros de page apparaissent dans les pieds de page, alignés à gauche pour les pages paires, à droite pour les pages impaires.
